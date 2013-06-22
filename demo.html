@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>jqSimpleTweets Demo</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="initial-scale=1.0, width=device-width">
+        <style type="text/css">body{font:12px Arial;padding:30px 0 50px 0} p{text-align:center;font-size:16px}</style>
+        
+          
+      <link rel="stylesheet" href="jqSimpleTweets/jqSimpleTweets.css">
+	  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	  <script type="text/javascript" src="jqSimpleTweets/jqSimpleTweets.min.js"></script>
+
+	  <script>
+	   $(document).ready(function() {
+
+	     $("#demo1").jqSimpleTweets({
+	       username: "twitterapi",
+	       tweetcount: 3
+	     })
+	
+	    $("#demo2").jqSimpleTweets({
+	       username: "cnn",
+	       tweetcount: 1,
+	       loadingtext: "Please wait..",
+	       displaytweetavatar: true,
+	       displayheaderavatar:false
+	   })
+	
+	
+	   $("#demo3").jqSimpleTweets({})
+	
+	  });
+	 </script>
+
+    </head>
+
+<body>
+  
+     <p class="note">For instructions, refer to this <a href="#">blog post</a> or the github page</p>
+
+     
+     <div id="demo1"></div>
+
+     <br /><br />
+
+     <div id="demo2"></div>
+
+     <br /><br />
+
+     <div id="demo3"></div>
+
+ 
+</body>
+</html>
